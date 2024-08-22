@@ -1,15 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>assignment-3</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+    <!-- custom color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'text-description': '#737373',
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body class="bg-white">
-    <header></header>
+
+<body class="font-manrope bg-white">
+    <header class="text-black max-w-7xl mx-auto">
+        <div class="navbar text-black">
+            <div class="navbar-start">
+
+                <a class="btn btn-ghost text-3xl font-bold">
+                    <div class="bg-[#ABEF5F] rounded-full  flex items-center w-7 h-7 justify-center">
+                        <span class=" text-lg text-black rotate-45">&#8593;</span>
+                    </div>
+                    Rinterio
+                </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a><span class="font-bold">Home</span></a></li>
+                    <li><a class="text-description">Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end ">
+                <div class="hidden md:flex">
+                    <button class=" btn btn-ghost btn-circle ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <div class="flex-none">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                                <div class="indicator">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex">
+                    <a class="btn btn-circle btn-wide bg-[#ABEF5F] text-black border-none text-xl">
+                        <div class="bg-[#1C1C1C] rounded-full  flex items-center w-6 h-6 justify-center">
+                            <span class=" text-lg text-white rotate-45">&#8593;</span>
+                        </div> Button
+                    </a>
+                </div>
+
+                <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-[#5050507c] rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card ">
+            <figure class="px-10 pt-10">
+              <img
+                src="assets/banner.png"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-6xl max-w-5xl">A barn house of this design has a striking appearance</h2>
+              <p class="max-w-4xl">The barn house captivates with its blend of rustic charm and modern sophistication, 
+                featuring weathered wood, sleek metal accents, and large windows that flood 
+                the space with natural light.</p>
+              <div class="card-actions">
+                <a class="btn btn-circle btn-wide bg-[#ABEF5F80] text-black border-none text-xl">
+                    <div class="bg-[#ABEF5F] rounded-full  flex items-center w-6 h-6 justify-center">
+                        <span class=" text-lg text-black rotate-45">&#8593;</span>
+                    </div> View Details
+                </a>
+              </div>
+            </div>
+          </div>
+    </header>
     <main></main>
     <footer></footer>
 </body>
-</html>     
+
+</html>
