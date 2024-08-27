@@ -410,10 +410,25 @@
                     with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal
                     accents.
                 </p>
+                <div class="w-full md:w-[90%] lg:w-[70%] flex flex-col gap-5 mx-auto">
+                    <div class="w-[70%] mx-auto flex flex-col md:w-[90%] lg:w-[90%] md:flex-row md:justify-between gap-5">
+                        <input type="text" placeholder="First Name*" class=" input input-bordered rounded-3xl md:w-[48%] " />
+                        <input type="text" placeholder="Last Name*" class=" input input-bordered rounded-3xl md:w-[48%]" />
+                    </div>
+                    <div class="w-[70%] mx-auto flex flex-col md:w-[90%] lg:w-[90%] md:flex-row md:justify-between gap-5">
+                        <input type="text" placeholder="Phone Number*" class=" input input-bordered rounded-3xl md:w-[48%] " />
+                        <input type="text" placeholder="Email Number*" class=" input input-bordered rounded-3xl md:w-[48%]" />
+                    </div>
+                    <textarea class="textarea textarea-bordered rounded-3xl h-60 w-[70%] md:w-[90%] lg:w-[90%] mx-auto" placeholder="Write your message here"></textarea>
+                    <a class="btn btn-circle btn-block bg-[#ABEF5F] text-black border-none text-xl w-[70%] md:w-[90%] lg:w-[90%] mx-auto">
+                        Send Mail
+                        <div class="bg-[#1C1C1C] rounded-full  flex items-center w-6 h-6 justify-center">
+                            <span class=" text-lg text-white rotate-45">&#8593;</span>
+                        </div>
+                    </a>
+                </div>
             </div>
-
         </div>
-
     </main>
     <footer class=" bg-[#1C1C1C] ">
         <div class="max-w-[1380px] mx-auto footer footer-center  text-primary-content p-10">
@@ -439,7 +454,7 @@
             </aside>
             <nav>
                 <div>
-                    <a class="btn btn-circle btn-wide bg-[#ABEF5F] text-black border-none text-xl">
+                    <a class="btn btn-circle btn-wide  bg-[#ABEF5F] text-black border-none text-xl">
                         Consult
                         <div class="bg-[#1C1C1C] rounded-full  flex items-center w-6 h-6 justify-center">
                             <span class=" text-lg text-white rotate-45">&#8593;</span>
@@ -448,7 +463,6 @@
                 </div>
             </nav>
         </div>
-
     </footer>
 </body>
 
